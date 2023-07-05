@@ -22,21 +22,26 @@ $this->breadcrumbs=array(
 	),
 )); ?>
 
+    <?php if(Yii::app()->user->hasFlash('signup')) { ?>
+
+        <div class="flash-success">
+            <?php echo Yii::app()->user->getFlash('signup'); ?>
+        </div>
+
+    <?php } ?>
+
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'username'); ?>
-		<?php echo $form->textField($model,'username'); ?>
+		<?php echo $form->textField($model,'username',array('size'=>60,'minlength'=>6,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'username'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'password'); ?>
-		<?php echo $form->passwordField($model,'password'); ?>
+		<?php echo $form->passwordField($model,'password',array('size'=>60,'minlength'=>6,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'password'); ?>
-		<p class="hint">
-			Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>.
-		</p>
 	</div>
 
 	<div class="row rememberMe">
