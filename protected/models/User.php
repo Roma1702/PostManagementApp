@@ -84,7 +84,10 @@ class User extends CActiveRecord
 	{
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
-		$criteria=new CDbCriteria;
+        $currentUser = Yii::app()->user->getId();
+        $criteria =  new CDbCriteria;
+        $criteria->addCondition('id <> :currentUser');
+        $criteria->params[':currentUser'] = $currentUser;
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('username',$this->username,true);
