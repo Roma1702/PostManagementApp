@@ -1451,3 +1451,97 @@ Stack trace:
 REQUEST_URI=/PostManagementApp/index.php?r=post/index&id=6
 HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/index
 ---
+2023/07/07 14:42:19 [warning] [application] Failed to set unsafe attribute "password2" of "User".
+in D:\Roma\git\PostManagementApp\protected\controllers\SiteController.php (98)
+in D:\Roma\git\PostManagementApp\index.php (13)
+2023/07/07 15:07:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+ in C:\xampp\yii-1.1.28.23448d\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\xampp\yii-1.1.28.23448d\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\xampp\yii-1.1.28.23448d\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(459): CModule->getComponent('db')
+#4 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(639): CApplication->getDb()
+#5 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(2390): CActiveRecord->getDbConnection()
+#6 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(User))
+#7 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 D:\Roma\git\PostManagementApp\protected\controllers\SiteController.php(90): CActiveRecord->__construct('signup')
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionSignUp()
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('signup')
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/signup')
+#15 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=site/signup
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=site/login
+---
+2023/07/07 15:09:20 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+ in C:\xampp\yii-1.1.28.23448d\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\xampp\yii-1.1.28.23448d\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\xampp\yii-1.1.28.23448d\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(459): CModule->getComponent('db')
+#4 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(639): CApplication->getDb()
+#5 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(2390): CActiveRecord->getDbConnection()
+#6 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(User))
+#7 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 D:\Roma\git\PostManagementApp\protected\controllers\SiteController.php(90): CActiveRecord->__construct('signup')
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionSignUp()
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('signup')
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/signup')
+#15 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=site/signup
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=site/login
+---
+2023/07/07 15:09:34 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+ in C:\xampp\yii-1.1.28.23448d\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\xampp\yii-1.1.28.23448d\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\xampp\yii-1.1.28.23448d\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(459): CModule->getComponent('db')
+#4 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(639): CApplication->getDb()
+#5 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(2390): CActiveRecord->getDbConnection()
+#6 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(User))
+#7 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 D:\Roma\git\PostManagementApp\protected\controllers\SiteController.php(90): CActiveRecord->__construct('signup')
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionSignUp()
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('signup')
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/signup')
+#15 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=site/signup
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=site/login
+---
+2023/07/07 15:13:56 [warning] [application] Failed to set unsafe attribute "password2" of "User".
+in D:\Roma\git\PostManagementApp\protected\controllers\SiteController.php (98)
+in D:\Roma\git\PostManagementApp\index.php (13)
+2023/07/07 15:32:12 [warning] [application] Failed to set unsafe attribute "password2" of "User".
+in D:\Roma\git\PostManagementApp\protected\controllers\SiteController.php (98)
+in D:\Roma\git\PostManagementApp\index.php (13)
+2023/07/07 15:41:02 [error] [exception.CHttpException.404] CHttpException: Error 404 in D:\Roma\git\PostManagementApp\protected\controllers\SiteController.php:88
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionSignUp()
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('signup')
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/signup')
+#6 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=site/signup
+---
