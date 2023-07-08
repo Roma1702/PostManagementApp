@@ -1,0 +1,1547 @@
+2023/07/05 21:15:52 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\yii-1.1.28.23448d\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/admin
+---
+2023/07/05 21:58:18 [error] [exception.CException] CException: SiteController cannot find the requested view "signUp". in C:\xampp\yii-1.1.28.23448d\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('signUp', Array, true)
+#1 D:\Roma\git\PostManagementApp\protected\controllers\SiteController.php(139): CController->render('signUp', Array)
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionSignUp()
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('signup')
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/signup')
+#8 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=site/signup
+---
+2023/07/05 23:11:50 [warning] [application] Failed to set unsafe attribute "password2" of "User".
+in D:\Roma\git\PostManagementApp\protected\controllers\SiteController.php (124)
+in D:\Roma\git\PostManagementApp\index.php (13)
+2023/07/05 23:12:23 [error] [exception.CException] CException: Property "User.title" is not defined. in C:\xampp\yii-1.1.28.23448d\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(145): CComponent->__get('title')
+#1 D:\Roma\git\PostManagementApp\protected\components\UserIdentity.php(29): CActiveRecord->__get('title')
+#2 D:\Roma\git\PostManagementApp\protected\models\LoginForm.php(54): UserIdentity->authenticate()
+#3 C:\xampp\yii-1.1.28.23448d\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\yii-1.1.28.23448d\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\yii-1.1.28.23448d\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#6 D:\Roma\git\PostManagementApp\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=site/login
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=site/login
+---
+2023/07/05 23:17:42 [error] [exception.CException] CException: Property "User.title" is not defined. in C:\xampp\yii-1.1.28.23448d\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(145): CComponent->__get('title')
+#1 D:\Roma\git\PostManagementApp\protected\components\UserIdentity.php(29): CActiveRecord->__get('title')
+#2 D:\Roma\git\PostManagementApp\protected\models\LoginForm.php(54): UserIdentity->authenticate()
+#3 C:\xampp\yii-1.1.28.23448d\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\yii-1.1.28.23448d\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\yii-1.1.28.23448d\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#6 D:\Roma\git\PostManagementApp\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=site/login
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=site/login
+---
+2023/07/05 23:18:37 [error] [exception.CException] CException: Property "User.title" is not defined. in C:\xampp\yii-1.1.28.23448d\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(145): CComponent->__get('title')
+#1 D:\Roma\git\PostManagementApp\protected\components\UserIdentity.php(29): CActiveRecord->__get('title')
+#2 D:\Roma\git\PostManagementApp\protected\models\LoginForm.php(54): UserIdentity->authenticate()
+#3 C:\xampp\yii-1.1.28.23448d\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\yii-1.1.28.23448d\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\yii-1.1.28.23448d\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#6 D:\Roma\git\PostManagementApp\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=site/login
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=site/login
+---
+2023/07/05 23:31:30 [warning] [application] Failed to set unsafe attribute "password2" of "User".
+in D:\Roma\git\PostManagementApp\protected\controllers\SiteController.php (124)
+in D:\Roma\git\PostManagementApp\index.php (13)
+2023/07/05 23:35:41 [warning] [application] Failed to set unsafe attribute "password2" of "User".
+in D:\Roma\git\PostManagementApp\protected\controllers\SiteController.php (124)
+in D:\Roma\git\PostManagementApp\index.php (13)
+2023/07/05 23:38:26 [warning] [application] Failed to set unsafe attribute "password2" of "User".
+in D:\Roma\git\PostManagementApp\protected\controllers\SiteController.php (124)
+in D:\Roma\git\PostManagementApp\index.php (13)
+2023/07/06 00:32:42 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\yii-1.1.28.23448d\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('post/admin')
+#9 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=post/admin
+---
+2023/07/06 00:32:56 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\yii-1.1.28.23448d\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('post/admin')
+#9 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=post/admin
+---
+2023/07/06 00:34:39 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\yii-1.1.28.23448d\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('post/admin')
+#9 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=post/admin
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=post
+---
+2023/07/06 00:40:16 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "imdex". in C:\xampp\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('imdex')
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('imdex')
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('post/imdex')
+#3 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=post/imdex
+---
+2023/07/06 00:47:37 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\yii-1.1.28.23448d\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('post/admin')
+#9 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=post/admin
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=post
+---
+2023/07/06 01:01:50 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\yii-1.1.28.23448d\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/admin
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/index
+---
+2023/07/06 01:04:25 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\yii-1.1.28.23448d\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#10 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/view
+---
+2023/07/06 01:18:50 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\yii-1.1.28.23448d\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/admin
+---
+2023/07/06 01:20:17 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\yii-1.1.28.23448d\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view/4')
+#10 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/view/4
+---
+2023/07/06 01:20:56 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\yii-1.1.28.23448d\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#10 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/view&4
+---
+2023/07/06 01:21:09 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\yii-1.1.28.23448d\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view/4')
+#10 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/view/4
+---
+2023/07/06 01:23:26 [error] [exception.CException] CException: UserController cannot find the requested view "admin". in C:\xampp\yii-1.1.28.23448d\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('admin', Array, true)
+#1 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(142): CController->render('admin', Array)
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('admin')
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#13 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/admin
+---
+2023/07/06 01:25:54 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\yii-1.1.28.23448d\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#10 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/view
+---
+2023/07/06 01:41:35 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in D:\Roma\git\PostManagementApp\protected\controllers\UserController.php:157
+Stack trace:
+#0 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(55): UserController->loadModel('roma1702')
+#1 [internal function]: UserController->actionView('roma1702')
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#14 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/view&id=roma1702
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/index
+---
+2023/07/06 12:08:28 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "create". in C:\xampp\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('create')
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('create')
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#3 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/create
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/admin
+---
+2023/07/06 12:14:45 [error] [exception.CException] CException: The "dataProvider" property cannot be empty. in C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php:123
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\grid\CGridView.php(355): CBaseListView->init()
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(147): CGridView->init()
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 D:\Roma\git\PostManagementApp\protected\views\user\admin.php(43): CBaseController->widget('zii.widgets.gri...', Array)
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require('D:\\Roma\\git\\Pos...')
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('admin', Array, true)
+#8 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(127): CController->render('admin', Array)
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#20 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/admin
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/index
+---
+2023/07/06 12:27:04 [error] [exception.CException] CException: Property "CGridView.showFilter" is not defined. in C:\xampp\yii-1.1.28.23448d\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CWidgetFactory.php(161): CComponent->__set('showFilter', false)
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(UserController), 'CGridView', Array)
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 D:\Roma\git\PostManagementApp\protected\views\user\admin.php(43): CBaseController->widget('zii.widgets.gri...', Array)
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require('D:\\Roma\\git\\Pos...')
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('admin', Array, true)
+#8 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(127): CController->render('admin', Array)
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#20 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/admin
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/index
+---
+2023/07/06 12:27:10 [error] [exception.CException] CException: Property "CGridView.showFilter" is not defined. in C:\xampp\yii-1.1.28.23448d\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CWidgetFactory.php(161): CComponent->__set('showFilter', false)
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(UserController), 'CGridView', Array)
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 D:\Roma\git\PostManagementApp\protected\views\user\admin.php(43): CBaseController->widget('zii.widgets.gri...', Array)
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require('D:\\Roma\\git\\Pos...')
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('admin', Array, true)
+#8 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(127): CController->render('admin', Array)
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#20 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/admin
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/index
+---
+2023/07/06 12:28:08 [error] [exception.CException] CException: Property "CGridView.showFilter" is not defined. in C:\xampp\yii-1.1.28.23448d\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CWidgetFactory.php(161): CComponent->__set('showFilter', false)
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(UserController), 'CGridView', Array)
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 D:\Roma\git\PostManagementApp\protected\views\user\admin.php(43): CBaseController->widget('zii.widgets.gri...', Array)
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require('D:\\Roma\\git\\Pos...')
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('admin', Array, true)
+#8 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(127): CController->render('admin', Array)
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#20 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/admin
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/index
+---
+2023/07/06 12:29:51 [error] [php] Undefined variable: model (D:\Roma\git\PostManagementApp\protected\views\user\index.php:23)
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): UserController->renderInternal()
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): UserController->renderFile()
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): UserController->renderPartial()
+#4 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(112): UserController->render()
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): UserController->runActionWithFilters()
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): UserController->run()
+#15 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\Roma\git\PostManagementApp\index.php(13): CWebApplication->run()
+REQUEST_URI=/PostManagementApp/index.php?r=user/index
+in D:\Roma\git\PostManagementApp\protected\views\user\index.php (23)
+in D:\Roma\git\PostManagementApp\protected\controllers\UserController.php (112)
+in D:\Roma\git\PostManagementApp\index.php (13)
+2023/07/06 12:34:33 [error] [exception.CException] CException: Property "CGridView.showFilter" is not defined. in C:\xampp\yii-1.1.28.23448d\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CWidgetFactory.php(161): CComponent->__set('showFilter', false)
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(UserController), 'CGridView', Array)
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 D:\Roma\git\PostManagementApp\protected\views\user\admin.php(43): CBaseController->widget('zii.widgets.gri...', Array)
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require('D:\\Roma\\git\\Pos...')
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('admin', Array, true)
+#8 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(127): CController->render('admin', Array)
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#20 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/admin
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/index
+---
+2023/07/06 12:36:01 [error] [exception.CException] CException: Property "CGridView.showFilter" is not defined. in C:\xampp\yii-1.1.28.23448d\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CWidgetFactory.php(161): CComponent->__set('showFilter', false)
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(UserController), 'CGridView', Array)
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 D:\Roma\git\PostManagementApp\protected\views\user\admin.php(43): CBaseController->widget('zii.widgets.gri...', Array)
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require('D:\\Roma\\git\\Pos...')
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('admin', Array, true)
+#8 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(127): CController->render('admin', Array)
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#20 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/admin
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/index
+---
+2023/07/06 12:36:35 [error] [exception.CException] CException: Property "CGridView.showFilter" is not defined. in C:\xampp\yii-1.1.28.23448d\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CWidgetFactory.php(161): CComponent->__set('showFilter', false)
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(UserController), 'CGridView', Array)
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 D:\Roma\git\PostManagementApp\protected\views\user\admin.php(43): CBaseController->widget('zii.widgets.gri...', Array)
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require('D:\\Roma\\git\\Pos...')
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('admin', Array, true)
+#8 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(127): CController->render('admin', Array)
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#20 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/admin
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/index
+---
+2023/07/06 12:39:39 [error] [exception.CException] CException: Property "CButtonColumn.filter" is not defined. in C:\xampp\yii-1.1.28.23448d\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\YiiBase.php(227): CComponent->__set('filter', false)
+#1 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\grid\CGridView.php(404): YiiBase::createComponent(Array, Object(CGridView))
+#2 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\grid\CGridView.php(375): CGridView->initColumns()
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(147): CGridView->init()
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 D:\Roma\git\PostManagementApp\protected\views\user\admin.php(43): CBaseController->widget('zii.widgets.gri...', Array)
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require('D:\\Roma\\git\\Pos...')
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('admin', Array, true)
+#10 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(127): CController->render('admin', Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('admin')
+#21 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#22 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/admin
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/index
+---
+2023/07/06 13:12:01 [error] [php] Undefined variable: model (D:\Roma\git\PostManagementApp\protected\views\user\index.php:20)
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): UserController->renderInternal()
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): UserController->renderFile()
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): UserController->renderPartial()
+#4 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(112): UserController->render()
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): UserController->runActionWithFilters()
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): UserController->run()
+#15 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\Roma\git\PostManagementApp\index.php(13): CWebApplication->run()
+REQUEST_URI=/PostManagementApp/index.php?r=user/index
+in D:\Roma\git\PostManagementApp\protected\views\user\index.php (20)
+in D:\Roma\git\PostManagementApp\protected\controllers\UserController.php (112)
+in D:\Roma\git\PostManagementApp\index.php (13)
+2023/07/06 13:12:38 [error] [exception.CException] CException: CActiveDataProvider and its behaviors do not have a method or closure named "getAttributeLabel". in C:\xampp\yii-1.1.28.23448d\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\helpers\CHtml.php(1509): CComponent->__call('getAttributeLab...', Array)
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\widgets\CActiveForm.php(586): CHtml::activeLabel(Object(CActiveDataProvider), 'id', Array)
+#2 D:\Roma\git\PostManagementApp\protected\views\user\_search.php(15): CActiveForm->label(Object(CActiveDataProvider), 'id')
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require('D:\\Roma\\git\\Pos...')
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#6 D:\Roma\git\PostManagementApp\protected\views\user\index.php(20): CController->renderPartial('_search', Array)
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require('D:\\Roma\\git\\Pos...')
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#11 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(112): CController->render('index', Array)
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#17 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#22 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#23 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/index
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/view&id=4
+---
+2023/07/06 13:32:19 [error] [php] Undefined variable: model (D:\Roma\git\PostManagementApp\protected\views\user\index.php:20)
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): UserController->renderInternal()
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): UserController->renderFile()
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): UserController->renderPartial()
+#4 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(112): UserController->render()
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): UserController->runActionWithFilters()
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): UserController->run()
+#15 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\Roma\git\PostManagementApp\index.php(13): CWebApplication->run()
+REQUEST_URI=/PostManagementApp/index.php?r=user/index
+in D:\Roma\git\PostManagementApp\protected\views\user\index.php (20)
+in D:\Roma\git\PostManagementApp\protected\controllers\UserController.php (112)
+in D:\Roma\git\PostManagementApp\index.php (13)
+2023/07/06 13:35:57 [error] [exception.CException] CException: CActiveDataProvider and its behaviors do not have a method or closure named "getAttributeLabel". in C:\xampp\yii-1.1.28.23448d\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\helpers\CHtml.php(1509): CComponent->__call('getAttributeLab...', Array)
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\widgets\CActiveForm.php(586): CHtml::activeLabel(Object(CActiveDataProvider), 'id', Array)
+#2 D:\Roma\git\PostManagementApp\protected\views\user\_search.php(15): CActiveForm->label(Object(CActiveDataProvider), 'id')
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require('D:\\Roma\\git\\Pos...')
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#6 D:\Roma\git\PostManagementApp\protected\views\user\index.php(20): CController->renderPartial('_search', Array)
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require('D:\\Roma\\git\\Pos...')
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#11 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(112): CController->render('index', Array)
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#17 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#22 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#23 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/index
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/view&id=4
+---
+2023/07/06 13:36:37 [error] [php] Undefined variable: model (D:\Roma\git\PostManagementApp\protected\views\user\index.php:20)
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): UserController->renderInternal()
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): UserController->renderFile()
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): UserController->renderPartial()
+#4 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(112): UserController->render()
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): UserController->runActionWithFilters()
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): UserController->run()
+#15 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\Roma\git\PostManagementApp\index.php(13): CWebApplication->run()
+REQUEST_URI=/PostManagementApp/index.php?r=user/index
+in D:\Roma\git\PostManagementApp\protected\views\user\index.php (20)
+in D:\Roma\git\PostManagementApp\protected\controllers\UserController.php (112)
+in D:\Roma\git\PostManagementApp\index.php (13)
+2023/07/06 13:39:35 [error] [exception.ParseError] ParseError: syntax error, unexpected 'array' (T_ARRAY) in D:\Roma\git\PostManagementApp\protected\views\user\index.php:18
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#3 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(112): CController->render('index', Array)
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#15 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/index
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/admin
+---
+2023/07/06 13:40:22 [error] [php] Undefined variable: model (D:\Roma\git\PostManagementApp\protected\views\user\index.php:19)
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): UserController->renderInternal()
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): UserController->renderFile()
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): UserController->renderPartial()
+#4 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(112): UserController->render()
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): UserController->runActionWithFilters()
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): UserController->run()
+#15 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\Roma\git\PostManagementApp\index.php(13): CWebApplication->run()
+REQUEST_URI=/PostManagementApp/index.php?r=user/index
+in D:\Roma\git\PostManagementApp\protected\views\user\index.php (19)
+in D:\Roma\git\PostManagementApp\protected\controllers\UserController.php (112)
+in D:\Roma\git\PostManagementApp\index.php (13)
+2023/07/06 13:45:38 [error] [exception.CException] CException: CActiveDataProvider and its behaviors do not have a method or closure named "search". in C:\xampp\yii-1.1.28.23448d\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(115): CComponent->__call('search', Array)
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#12 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/index
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/admin
+---
+2023/07/06 13:46:19 [error] [php] Undefined variable: dataProvider (D:\Roma\git\PostManagementApp\protected\controllers\UserController.php:120)
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): UserController->runActionWithFilters()
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): UserController->run()
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\Roma\git\PostManagementApp\index.php(13): CWebApplication->run()
+REQUEST_URI=/PostManagementApp/index.php?r=user/index
+in D:\Roma\git\PostManagementApp\protected\controllers\UserController.php (120)
+in D:\Roma\git\PostManagementApp\index.php (13)
+2023/07/06 13:47:04 [error] [exception.ParseError] ParseError: syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')' in D:\Roma\git\PostManagementApp\protected\controllers\UserController.php:120
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(276): CWebApplication->createController('index/')
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#2 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/index
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/admin
+---
+2023/07/06 14:15:18 [error] [exception.ParseError] ParseError: syntax error, unexpected '}', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in D:\Roma\git\PostManagementApp\protected\controllers\UserController.php:56
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(276): CWebApplication->createController('index/')
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#2 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/index
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/view&id=6
+---
+2023/07/06 14:33:06 [error] [exception.CException] CException: Property "CLinkPager.ButtonCount" is not defined. in C:\xampp\yii-1.1.28.23448d\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CWidgetFactory.php(161): CComponent->__set('ButtonCount', 5)
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(CListView), 'CLinkPager', Array)
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(181): CBaseController->createWidget('CLinkPager', Array)
+#3 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(289): CBaseController->widget('CLinkPager', Array)
+#4 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(181): CBaseListView->renderPager()
+#5 [internal function]: CBaseListView->renderSection(Array)
+#6 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#7 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(182): CBaseListView->run()
+#9 D:\Roma\git\PostManagementApp\protected\views\user\index.php(24): CBaseController->widget('zii.widgets.CLi...', Array)
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require('D:\\Roma\\git\\Pos...')
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#14 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(112): CController->render('index', Array)
+#15 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#16 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#20 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#25 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#26 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#27 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/index
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/admin
+---
+2023/07/06 14:33:16 [error] [exception.CException] CException: Property "CLinkPager.ButtonCount" is not defined. in C:\xampp\yii-1.1.28.23448d\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CWidgetFactory.php(161): CComponent->__set('ButtonCount', 5)
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(CListView), 'CLinkPager', Array)
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(181): CBaseController->createWidget('CLinkPager', Array)
+#3 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(289): CBaseController->widget('CLinkPager', Array)
+#4 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(181): CBaseListView->renderPager()
+#5 [internal function]: CBaseListView->renderSection(Array)
+#6 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#7 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(182): CBaseListView->run()
+#9 D:\Roma\git\PostManagementApp\protected\views\user\index.php(24): CBaseController->widget('zii.widgets.CLi...', Array)
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require('D:\\Roma\\git\\Pos...')
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#14 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(112): CController->render('index', Array)
+#15 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#16 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#20 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#25 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#26 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#27 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/index
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/admin
+---
+2023/07/06 14:36:08 [error] [exception.CException] CException: Property "CLinkPager.0" is not defined. in C:\xampp\yii-1.1.28.23448d\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CWidgetFactory.php(161): CComponent->__set('0', 'htmlOptions')
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(CListView), 'CLinkPager', Array)
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(181): CBaseController->createWidget('CLinkPager', Array)
+#3 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(289): CBaseController->widget('CLinkPager', Array)
+#4 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(181): CBaseListView->renderPager()
+#5 [internal function]: CBaseListView->renderSection(Array)
+#6 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#7 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(182): CBaseListView->run()
+#9 D:\Roma\git\PostManagementApp\protected\views\user\index.php(24): CBaseController->widget('zii.widgets.CLi...', Array)
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require('D:\\Roma\\git\\Pos...')
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#14 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(112): CController->render('index', Array)
+#15 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#16 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#20 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#25 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#26 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#27 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/index
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/admin
+---
+2023/07/06 15:06:07 [error] [exception.ParseError] ParseError: syntax error, unexpected ';', expecting ')' in D:\Roma\git\PostManagementApp\protected\views\user\view.php:24
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#3 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(57): CController->render('view', Array)
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): UserController->actionView()
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#15 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/view
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/index
+---
+2023/07/06 15:08:01 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "admin". in C:\xampp\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#3 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/admin
+---
+2023/07/06 16:36:50 [error] [php] Undefined variable: user_id (D:\Roma\git\PostManagementApp\protected\models\Post.php:113)
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1077): Post->beforeSave()
+#1 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(811): Post->insert()
+#2 D:\Roma\git\PostManagementApp\protected\controllers\PostController.php(73): Post->save()
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): PostController->actionCreate()
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): PostController->runActionWithFilters()
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): PostController->run()
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\Roma\git\PostManagementApp\index.php(13): CWebApplication->run()
+REQUEST_URI=/PostManagementApp/index.php?r=post/create
+in D:\Roma\git\PostManagementApp\protected\models\Post.php (113)
+in D:\Roma\git\PostManagementApp\protected\controllers\PostController.php (73)
+in D:\Roma\git\PostManagementApp\index.php (13)
+2023/07/06 16:59:48 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\yii-1.1.28.23448d\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#10 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=post/view
+---
+2023/07/06 17:12:33 [error] [php] include(PostController.php): failed to open stream: No such file or directory (C:\xampp\yii-1.1.28.23448d\framework\YiiBase.php:463)
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\YiiBase.php(463): include()
+#1 unknown(0): autoload()
+#2 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(60): spl_autoload_call()
+#3 unknown(0): UserController->actionView()
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs()
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): UserController->runActionWithFilters()
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): UserController->run()
+#15 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\Roma\git\PostManagementApp\index.php(13): CWebApplication->run()
+REQUEST_URI=/PostManagementApp/index.php?r=user/view&id=6
+in D:\Roma\git\PostManagementApp\protected\controllers\UserController.php (60)
+in D:\Roma\git\PostManagementApp\index.php (13)
+2023/07/06 17:24:46 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\yii-1.1.28.23448d\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#10 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=post/index
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user%2Findex&User%5Bid%5D=&User%5Busername%5D=&yt0=Search
+---
+2023/07/06 17:32:21 [error] [exception.CException] CException: Property "Post.username" is not defined. in C:\xampp\yii-1.1.28.23448d\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 D:\Roma\git\PostManagementApp\protected\views\user\_view.php(13): CActiveRecord->__get('username')
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(130): require('D:\\Roma\\git\\Pos...')
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, false)
+#4 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array)
+#5 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(182): CBaseListView->run()
+#10 D:\Roma\git\PostManagementApp\protected\views\post\index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require('D:\\Roma\\git\\Pos...')
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('//post/index', Array, true)
+#15 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(67): CController->render('//post/index', Array)
+#16 [internal function]: UserController->actionView('6')
+#17 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#18 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#19 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#28 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#29 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#30 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/view&id=6
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/index
+---
+2023/07/06 17:35:37 [error] [exception.CException] CException: Property "Post.username" is not defined. in C:\xampp\yii-1.1.28.23448d\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 D:\Roma\git\PostManagementApp\protected\views\user\_view.php(13): CActiveRecord->__get('username')
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(130): require('D:\\Roma\\git\\Pos...')
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, false)
+#4 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array)
+#5 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(182): CBaseListView->run()
+#10 D:\Roma\git\PostManagementApp\protected\views\post\index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require('D:\\Roma\\git\\Pos...')
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('//post/index', Array, true)
+#15 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(67): CController->render('//post/index', Array)
+#16 [internal function]: UserController->actionView('6')
+#17 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#18 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#19 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#28 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#29 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#30 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/view&id=6
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/index
+---
+2023/07/06 17:35:57 [error] [exception.CException] CException: Property "Post.username" is not defined. in C:\xampp\yii-1.1.28.23448d\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 D:\Roma\git\PostManagementApp\protected\views\user\_view.php(13): CActiveRecord->__get('username')
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(130): require('D:\\Roma\\git\\Pos...')
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, false)
+#4 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array)
+#5 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(182): CBaseListView->run()
+#10 D:\Roma\git\PostManagementApp\protected\views\post\index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require('D:\\Roma\\git\\Pos...')
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('//post/index', Array, true)
+#15 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(67): CController->render('//post/index', Array)
+#16 [internal function]: UserController->actionView('6')
+#17 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#18 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#19 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#28 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#29 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#30 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/view&id=6
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/index
+---
+2023/07/06 17:46:25 [error] [exception.CException] CException: Property "Post.username" is not defined. in C:\xampp\yii-1.1.28.23448d\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 D:\Roma\git\PostManagementApp\protected\views\user\_view.php(13): CActiveRecord->__get('username')
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(130): require('D:\\Roma\\git\\Pos...')
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, false)
+#4 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array)
+#5 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(182): CBaseListView->run()
+#10 D:\Roma\git\PostManagementApp\protected\views\post\index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require('D:\\Roma\\git\\Pos...')
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#14 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(72): CController->renderPartial('//post/index', Array)
+#15 [internal function]: UserController->actionView('6')
+#16 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#17 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#18 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#20 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#21 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#22 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#23 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#24 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#25 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#27 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#28 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#29 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#30 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/view&id=6
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/index
+---
+2023/07/06 17:46:46 [error] [exception.CException] CException: Property "Post.username" is not defined. in C:\xampp\yii-1.1.28.23448d\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 D:\Roma\git\PostManagementApp\protected\views\user\_view.php(13): CActiveRecord->__get('username')
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(130): require('D:\\Roma\\git\\Pos...')
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, false)
+#4 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array)
+#5 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(182): CBaseListView->run()
+#10 D:\Roma\git\PostManagementApp\protected\views\post\index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require('D:\\Roma\\git\\Pos...')
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#14 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(72): CController->renderPartial('//post/index', Array)
+#15 [internal function]: UserController->actionView('6')
+#16 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#17 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#18 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#20 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#21 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#22 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#23 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#24 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#25 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#27 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#28 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#29 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#30 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/view&id=6
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/index
+---
+2023/07/06 17:53:37 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'create_time' in 'order clause'. The SQL statement executed was: SELECT * FROM `tbl_post` `t` WHERE user_id=:user_id ORDER BY create_time DESC LIMIT 10.
+in D:\Roma\git\PostManagementApp\protected\views\post\index.php (19)
+in D:\Roma\git\PostManagementApp\protected\controllers\UserController.php (76)
+in D:\Roma\git\PostManagementApp\index.php (13)
+2023/07/06 17:53:37 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'create_time' in 'order clause'. The SQL statement executed was: SELECT * FROM `tbl_post` `t` WHERE user_id=:user_id ORDER BY create_time DESC LIMIT 10 in C:\xampp\yii-1.1.28.23448d\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CActiveDataProvider.php(199): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#5 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#6 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(147): CListView->init()
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(181): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#9 D:\Roma\git\PostManagementApp\protected\views\post\index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require('D:\\Roma\\git\\Pos...')
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('//post/index', Array, true)
+#14 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(76): CController->render('//post/index', Array)
+#15 [internal function]: UserController->actionView('6')
+#16 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#17 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#18 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#20 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#21 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#22 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#23 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#24 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#25 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#27 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#28 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#29 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#30 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/view&id=6
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/index
+---
+2023/07/06 17:54:44 [error] [exception.CException] CException: Property "Post.username" is not defined. in C:\xampp\yii-1.1.28.23448d\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 D:\Roma\git\PostManagementApp\protected\views\user\_view.php(13): CActiveRecord->__get('username')
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(130): require('D:\\Roma\\git\\Pos...')
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, false)
+#4 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array)
+#5 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(182): CBaseListView->run()
+#10 D:\Roma\git\PostManagementApp\protected\views\post\index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require('D:\\Roma\\git\\Pos...')
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('//post/index', Array, true)
+#15 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(67): CController->render('//post/index', Array)
+#16 [internal function]: UserController->actionView('6')
+#17 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#18 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#19 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#28 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#29 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#30 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/view&id=6
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/index
+---
+2023/07/06 18:00:49 [error] [exception.CException] CException: Property "Post.username" is not defined. in C:\xampp\yii-1.1.28.23448d\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 D:\Roma\git\PostManagementApp\protected\views\user\_view.php(13): CActiveRecord->__get('username')
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(130): require('D:\\Roma\\git\\Pos...')
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, false)
+#4 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array)
+#5 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(182): CBaseListView->run()
+#10 D:\Roma\git\PostManagementApp\protected\views\post\index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require('D:\\Roma\\git\\Pos...')
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('//post/index', Array, true)
+#15 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(67): CController->render('//post/index', Array)
+#16 [internal function]: UserController->actionView('6')
+#17 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#18 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#19 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#28 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#29 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#30 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/view&id=6
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/index
+---
+2023/07/06 18:08:33 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "usesr/index". in C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('usesr/index')
+#1 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=usesr/index
+---
+2023/07/06 18:29:37 [error] [exception.CException] CException: Property "Post.username" is not defined. in C:\xampp\yii-1.1.28.23448d\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 D:\Roma\git\PostManagementApp\protected\views\user\_view.php(13): CActiveRecord->__get('username')
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(130): require('D:\\Roma\\git\\Pos...')
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, false)
+#4 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array)
+#5 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 C:\xampp\yii-1.1.28.23448d\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(182): CBaseListView->run()
+#10 D:\Roma\git\PostManagementApp\protected\views\post\index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require('D:\\Roma\\git\\Pos...')
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Roma\\git\\Pos...', Array, true)
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile('D:\\Roma\\git\\Pos...', Array, true)
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('//post/index', Array, true)
+#15 D:\Roma\git\PostManagementApp\protected\controllers\UserController.php(67): CController->render('//post/index', Array)
+#16 [internal function]: UserController->actionView('6')
+#17 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#18 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#19 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#28 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#29 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#30 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=user/view&id=6
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/index
+---
+2023/07/06 18:56:39 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\yii-1.1.28.23448d\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#10 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=post/index&id=6
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/index
+---
+2023/07/06 18:56:57 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\yii-1.1.28.23448d\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#10 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=post/index&id=6
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/index
+---
+2023/07/06 18:57:19 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\yii-1.1.28.23448d\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#10 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=post/index&id=6
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=user/index
+---
+2023/07/07 14:42:19 [warning] [application] Failed to set unsafe attribute "password2" of "User".
+in D:\Roma\git\PostManagementApp\protected\controllers\SiteController.php (98)
+in D:\Roma\git\PostManagementApp\index.php (13)
+2023/07/07 15:07:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+ in C:\xampp\yii-1.1.28.23448d\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\xampp\yii-1.1.28.23448d\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\xampp\yii-1.1.28.23448d\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(459): CModule->getComponent('db')
+#4 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(639): CApplication->getDb()
+#5 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(2390): CActiveRecord->getDbConnection()
+#6 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(User))
+#7 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 D:\Roma\git\PostManagementApp\protected\controllers\SiteController.php(90): CActiveRecord->__construct('signup')
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionSignUp()
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('signup')
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/signup')
+#15 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=site/signup
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=site/login
+---
+2023/07/07 15:09:20 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+ in C:\xampp\yii-1.1.28.23448d\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\xampp\yii-1.1.28.23448d\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\xampp\yii-1.1.28.23448d\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(459): CModule->getComponent('db')
+#4 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(639): CApplication->getDb()
+#5 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(2390): CActiveRecord->getDbConnection()
+#6 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(User))
+#7 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 D:\Roma\git\PostManagementApp\protected\controllers\SiteController.php(90): CActiveRecord->__construct('signup')
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionSignUp()
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('signup')
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/signup')
+#15 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=site/signup
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=site/login
+---
+2023/07/07 15:09:34 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+ in C:\xampp\yii-1.1.28.23448d\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\xampp\yii-1.1.28.23448d\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\xampp\yii-1.1.28.23448d\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(459): CModule->getComponent('db')
+#4 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(639): CApplication->getDb()
+#5 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(2390): CActiveRecord->getDbConnection()
+#6 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(User))
+#7 C:\xampp\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 D:\Roma\git\PostManagementApp\protected\controllers\SiteController.php(90): CActiveRecord->__construct('signup')
+#9 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionSignUp()
+#10 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('signup')
+#14 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/signup')
+#15 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=site/signup
+HTTP_REFERER=http://localhost:63342/PostManagementApp/index.php?r=site/login
+---
+2023/07/07 15:13:56 [warning] [application] Failed to set unsafe attribute "password2" of "User".
+in D:\Roma\git\PostManagementApp\protected\controllers\SiteController.php (98)
+in D:\Roma\git\PostManagementApp\index.php (13)
+2023/07/07 15:32:12 [warning] [application] Failed to set unsafe attribute "password2" of "User".
+in D:\Roma\git\PostManagementApp\protected\controllers\SiteController.php (98)
+in D:\Roma\git\PostManagementApp\index.php (13)
+2023/07/07 15:41:02 [error] [exception.CHttpException.404] CHttpException: Error 404 in D:\Roma\git\PostManagementApp\protected\controllers\SiteController.php:88
+Stack trace:
+#0 C:\xampp\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionSignUp()
+#1 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('signup')
+#5 C:\xampp\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/signup')
+#6 C:\xampp\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\Roma\git\PostManagementApp\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/PostManagementApp/index.php?r=site/signup
+---
